@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709680744
+::res://::1709756345
 icon.svg::CompressedTexture2D::1845722658164921825::1709594042::1709594042::1::::<><>::
 README.md::TextFile::-1::1709594042::0::1::::<><>::
 ::res://art/::1709594339
@@ -60,7 +60,8 @@ wooden.png::CompressedTexture2D::6388199549746506781::1709596086::1709596086::1:
 walls.png::CompressedTexture2D::6336649032085360086::1709596086::1709596086::1::::<><>::
 wooden_door.png::CompressedTexture2D::8124990235797560740::1709596086::1709596086::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::5172123091029239844::1709596086::1709596086::1::::<><>::
-::res://scenes/::1709596086
-player.tscn::PackedScene::6372093345273003726::1709596086::0::1::::<><>::uid://cmjuo4rjd0mao::::res://placeholders (DELETE LATER)/sprites/characters/player.png
-world.tscn::PackedScene::2697400020685970228::1709594402::0::1::::<><>::
-::res://scripts/::1709594343
+::res://scenes/::1709682490
+player.tscn::PackedScene::6372093345273003726::1709682490::0::1::::<><>::uid://cmjuo4rjd0mao::::res://placeholders (DELETE LATER)/sprites/characters/player.png<>res://scripts/player.gd
+world.tscn::PackedScene::2697400020685970228::1709682459::0::1::::<><>::
+::res://scripts/::1709682456
+player.gd::GDScript::-1::1709682456::0::1::::<>CharacterBody2D<>::
