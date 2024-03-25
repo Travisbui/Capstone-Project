@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const speed = 50
+const speed = 30
 var current_dir = "none"
-var push_force = 80.0
+var push_force = 500.0
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
