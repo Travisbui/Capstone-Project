@@ -4,6 +4,9 @@ const speed = 30
 var current_dir = "none"
 var push_force = 500.0
 
+@onready var all_interactions = []
+@onready var interactLabel = $"InteractComponent/InteractLabel"
+
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
 
@@ -74,3 +77,14 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+
+
+func _on_interact_area_area_entered(area):
+	all_interactions.insert(0, area)
+
+func _on_interact_area_area_exited(area):
+	all_interactions.erase(area)
+
+func update_interactions():
+	if all_interactions:
+		interactLabel.text = all_interactions[0]
