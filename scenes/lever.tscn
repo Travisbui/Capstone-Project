@@ -1,17 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dksb8xa71ycvb"]
+[gd_scene load_steps=4 format=3 uid="uid://dksb8xa71ycvb"]
 
+[ext_resource type="Script" path="res://scripts/lever.gd" id="1_2yebe"]
 [ext_resource type="Texture2D" uid="uid://1kc1uua86lmv" path="res://icon.svg" id="1_m6dgq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_62mkf"]
-radius = 91.9239
+radius = 9.0
 
 [node name="Lever" type="Area2D"]
+y_sort_enabled = true
 collision_layer = 2
 collision_mask = 0
+script = ExtResource("1_2yebe")
+interact_label = "E"
+interact_type = "print_text"
+interact_value = "aaaaa"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0.14902, 0.215686, 1)
-scale = Vector2(0.2, 0.7)
+scale = Vector2(0.05, 0.1)
 texture = ExtResource("1_m6dgq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

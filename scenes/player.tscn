@@ -321,6 +321,7 @@ size = Vector2(13, 2)
 radius = 15.0333
 
 [node name="player" type="CharacterBody2D"]
+y_sort_enabled = true
 motion_mode = 1
 script = ExtResource("1_qhjps")
 
@@ -359,7 +360,6 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 13
-text = "E"
 horizontal_alignment = 1
 vertical_alignment = 1
 

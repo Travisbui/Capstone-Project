@@ -1,5 +1,6 @@
-res://scenes/world.tscn
 res://scenes/player.tscn
-res://scenes/pushable_object.tscn
-res://scenes/lever.tscn
 res://scripts/player.gd
+res://scenes/lever.tscn
+res://scripts/lever.gd
+res://scenes/world.tscn
+res://scenes/pushable_object.tscn

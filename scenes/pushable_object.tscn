@@ -6,6 +6,7 @@
 size = Vector2(16, 6)
 
 [node name="pushable_object" type="RigidBody2D"]
+y_sort_enabled = true
 mass = 50.0
 gravity_scale = 0.0
 sleeping = true
