@@ -17,8 +17,12 @@ config/icon="res://icon.svg"
 
 [display]
 
+<<<<<<< HEAD
 window/size/viewport_width=1280
 window/size/viewport_height=720
+=======
+window/stretch/scale=4.0
+>>>>>>> parent of 2140a16 (main menu + pause menu added)
 
 [input]
 
