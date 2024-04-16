@@ -11,14 +11,9 @@ config_version=5
 [application]
 
 config/name="Capstone Project"
-run/main_scene="res://scenes/world.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
-
-[display]
-
-window/size/viewport_width=1280
-window/size/viewport_height=720
 
 [input]
 

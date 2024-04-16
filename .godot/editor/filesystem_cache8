@@ -1,17 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712275710
+::res://::1711813053
 icon.svg::CompressedTexture2D::1845722658164921825::1711499532::1711499532::1::::<><>::
 README.md::TextFile::-1::1711499532::0::1::::<><>::
-::res://art/::1712275053
-Floor Map Stones-2 (1).png::CompressedTexture2D::9102037636177592042::1712275053::1712275053::1::::<><>::
-General corner pieces.png::CompressedTexture2D::4113634047307962259::1712275053::1712275053::1::::<><>::
-General Door 2 Spread out.png::CompressedTexture2D::324147739354886539::1712275053::1712275053::1::::<><>::
-General Door.png::CompressedTexture2D::4581491862336160940::1712275047::1712275047::1::::<><>::
-General Single path tiles.png::CompressedTexture2D::1098765300006879126::1712275053::1712275053::1::::<><>::
-General Stairs.png::CompressedTexture2D::8284548700922788582::1712275047::1712275047::1::::<><>::
-General Tile floor and Wall.png::CompressedTexture2D::6981214569688330805::1712275047::1712275047::1::::<><>::
-General Tile Floor.png::CompressedTexture2D::6798994253909565050::1712275047::1712275047::1::::<><>::
-General Tile Map.png::CompressedTexture2D::7331900385884952582::1711499532::1712275047::1::::<><>::
+menu.tscn::PackedScene::788429774139304216::1711813053::0::1::::<><>::
+::res://art/::1711812139
+General Tile Map.png::CompressedTexture2D::7153015683136153637::1711499532::1711812139::1::::<><>::
 ::res://placeholders (DELETE LATER)/::1711499532
 ::res://placeholders (DELETE LATER)/DungeonTileset/::1711499532
 DungeonTileset.png::CompressedTexture2D::9096094752545089999::1711499532::1711499532::1::::<><>::
@@ -69,9 +62,10 @@ wooden.png::CompressedTexture2D::6388199549746506781::1711499532::1711499532::1:
 walls.png::CompressedTexture2D::6336649032085360086::1711499532::1711499532::1::::<><>::
 wooden_door.png::CompressedTexture2D::8124990235797560740::1711499532::1711499532::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::5172123091029239844::1711499532::1711499532::1::::<><>::
-::res://scenes/::1712275053
-player.tscn::PackedScene::6372093345273003726::1712275047::0::1::::<><>::uid://cmjuo4rjd0mao::::res://placeholders (DELETE LATER)/sprites/characters/player.png<>res://scripts/player.gd
-pushable_object.tscn::PackedScene::9186635276112527348::1711816960::0::1::::<><>::uid://1kc1uua86lmv::::res://icon.svg
-world.tscn::PackedScene::2697400020685970228::1712275053::0::1::::<><>::uid://cw1xpgcgaajg5::::res://scenes/player.tscn<>uid://dqbdkotgjswwc::::res://art/General Stairs.png<>uid://byuw7mhtnpbx0::::res://art/General corner pieces.png<>uid://c6p0t4dk7e2ub::::res://art/General Tile floor and Wall.png<>uid://c34qpa8aoqcgg::::res://art/General Tile Floor.png<>uid://pwiretvhjxis::::res://art/General Single path tiles.png<>uid://evawv14vqgad::::res://art/General Door 2 Spread out.png
-::res://scripts/::1712275047
+::res://scenes/::1711813052
+player.tscn::PackedScene::6372093345273003726::1711813052::0::1::::<><>::uid://cmjuo4rjd0mao::::res://placeholders (DELETE LATER)/sprites/characters/player.png<>res://scripts/player.gd
+pushable_object.tscn::PackedScene::9186635276112527348::1711813052::0::1::::<><>::uid://1kc1uua86lmv::::res://icon.svg
+world.tscn::PackedScene::2697400020685970228::1711813052::0::1::::<><>::uid://cw1xpgcgaajg5::::res://scenes/player.tscn<>uid://d35csngemn6ge::::res://scenes/pushable_object.tscn
+::res://scripts/::1711813114
 player.gd::GDScript::-1::1711499532::0::1::::<>CharacterBody2D<>::
+menu.gd::GDScript::-1::1711813114::0::1::::<>Control<>::
