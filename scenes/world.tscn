@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=16 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c6p0t4dk7e2ub" path="res://art/General Tile floor and Wall.png" id="3_ls6jq"]
 [ext_resource type="Texture2D" uid="uid://c34qpa8aoqcgg" path="res://art/General Tile Floor.png" id="4_c61xs"]
 [ext_resource type="Texture2D" uid="uid://pwiretvhjxis" path="res://art/General Single path tiles.png" id="7_0h2xv"]
+[ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_ihgun"]
 [ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="8_jc3ii"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qugv5"]
@@ -640,3 +641,7 @@ layer_0/tile_data = PackedInt32Array(1179662, 786435, 3, 1114126, 786435, 0, 111
 layer_1/name = "y-sort"
 layer_1/y_sort_enabled = true
 layer_1/tile_data = PackedInt32Array(1376266, 393219, 6, 1376267, 589827, 6, 1376269, 589827, 6, 1376270, 786435, 6, 786442, 393219, 6, 786445, 393219, 0, 786446, 786435, 6, 851993, 786435, 6, 851992, 589827, 6, 851991, 589827, 6, 851990, 589827, 6, 851989, 589827, 6, 851988, 589827, 6, 851987, 393219, 6, 327707, 393219, 6, 327708, 589827, 6, 327709, 589827, 6, 327710, 589827, 6, 327711, 786435, 6, 393218, 393219, 6, 393219, 589827, 6, 393220, 589827, 6, 393221, 589827, 6, 393222, 786435, 6, 65552, 393219, 6, 65553, 589827, 6, 65554, 589827, 6, 65555, 589827, 6, 65556, 786435, 6, -524269, 393219, 0, -524271, 786435, 0, -524272, 393219, 6, -524268, 786435, 6, 786443, 786435, 0, 327687, 589827, 6, 327688, 589827, 6, 327689, 589827, 6, 327690, 589827, 6, 327691, 786435, 0, 720911, 589827, 6, 720912, 589827, 6, 720913, 589827, 6, 720914, 589827, 6, 262167, 393219, 0, 262168, 589827, 6, 262169, 589827, 6, 262170, 589827, 6, 21, 786435, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]

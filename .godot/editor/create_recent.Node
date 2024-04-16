@@ -1,3 +1,11 @@
+CanvasLayer
+ColorRect
+AnimationPlayer
+Label
+Button
+VBoxContainer
+PanelContainer
+TextureRect
 Camera2D
 TileMap
 Sprite2D
