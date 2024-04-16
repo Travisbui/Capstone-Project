@@ -1,5 +1,13 @@
 Camera2D
-TileMap
+CanvasLayer
+ColorRect
+AnimationPlayer
+Button
+Label
+VBoxContainer
+PanelContainer
+Panel
+TextureRect
 Sprite2D
 CollisionShape2D
 RigidBody2D
