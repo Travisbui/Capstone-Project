@@ -5,7 +5,7 @@ var current_dir = "none"
 var push_force = 500.0
 
 func _ready():
-	$AnimatedSprite2D.play("front_idle")
+	$AnimatedSprite2D.play("back_idle")
 
 func _physics_process(delta):
 	player_movement(delta)
