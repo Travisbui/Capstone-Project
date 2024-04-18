@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://6jns6pr0428u"]
 
 [ext_resource type="Script" path="res://scripts/spike_trap.gd" id="1_ibfaj"]
-[ext_resource type="Texture2D" uid="uid://bx7o2spky8o2b" path="res://placeholders (DELETE LATER)/sprites/objects/chest_01.png" id="2_qqcn5"]
+[ext_resource type="Texture2D" uid="uid://c2be44gu7fofe" path="res://art/SpikeTrap4frame2.png" id="2_hly1c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iqd6n"]
-size = Vector2(16, 16)
+size = Vector2(28, 24)
 
 [sub_resource type="Animation" id="Animation_rhj0p"]
 length = 0.001
@@ -71,11 +71,12 @@ _data = {
 script = ExtResource("1_ibfaj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_iqd6n")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_qqcn5")
+texture = ExtResource("2_hly1c")
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
