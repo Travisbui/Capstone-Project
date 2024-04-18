@@ -1,0 +1,217 @@
+[gd_scene load_steps=16 format=3 uid="uid://cv08dcff6dygx"]
+
+[ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_6lqg6"]
+[ext_resource type="Texture2D" uid="uid://byuw7mhtnpbx0" path="res://art/General corner pieces.png" id="2_lnbkc"]
+[ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="3_jxnve"]
+[ext_resource type="Texture2D" uid="uid://c6p0t4dk7e2ub" path="res://art/General Tile floor and Wall.png" id="4_ro7mi"]
+[ext_resource type="Texture2D" uid="uid://c34qpa8aoqcgg" path="res://art/General Tile Floor.png" id="5_v55er"]
+[ext_resource type="Texture2D" uid="uid://pwiretvhjxis" path="res://art/General Single path tiles.png" id="6_m0ax0"]
+[ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="7_2bgnl"]
+[ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_848kn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2hqd5"]
+texture = ExtResource("2_lnbkc")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4vefy"]
+texture = ExtResource("3_jxnve")
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(2, 2)
+9:0/0 = 0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+6:3/size_in_atlas = Vector2i(2, 2)
+6:3/0 = 0
+9:3/size_in_atlas = Vector2i(2, 2)
+9:3/0 = 0
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_prg0v"]
+texture = ExtResource("4_ro7mi")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+0:6/size_in_atlas = Vector2i(2, 2)
+0:6/0 = 0
+3:6/size_in_atlas = Vector2i(2, 2)
+3:6/0 = 0
+0:9/size_in_atlas = Vector2i(2, 2)
+0:9/0 = 0
+3:9/size_in_atlas = Vector2i(2, 2)
+3:9/0 = 0
+0:12/size_in_atlas = Vector2i(2, 2)
+0:12/0 = 0
+3:12/size_in_atlas = Vector2i(2, 2)
+3:12/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(2, 2)
+9:0/0 = 0
+12:0/size_in_atlas = Vector2i(2, 2)
+12:0/0 = 0
+6:3/size_in_atlas = Vector2i(2, 2)
+6:3/0 = 0
+9:3/size_in_atlas = Vector2i(2, 2)
+9:3/0 = 0
+12:3/size_in_atlas = Vector2i(2, 2)
+12:3/0 = 0
+6:6/size_in_atlas = Vector2i(2, 2)
+6:6/0 = 0
+9:6/size_in_atlas = Vector2i(2, 2)
+9:6/0 = 0
+12:6/size_in_atlas = Vector2i(2, 2)
+12:6/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2x0my"]
+texture = ExtResource("5_v55er")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(2, 2)
+9:0/0 = 0
+12:0/size_in_atlas = Vector2i(2, 2)
+12:0/0 = 0
+15:0/size_in_atlas = Vector2i(2, 2)
+15:0/0 = 0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+6:3/size_in_atlas = Vector2i(2, 2)
+6:3/0 = 0
+9:3/size_in_atlas = Vector2i(2, 2)
+9:3/0 = 0
+12:3/size_in_atlas = Vector2i(2, 2)
+12:3/0 = 0
+15:3/size_in_atlas = Vector2i(2, 2)
+15:3/0 = 0
+0:6/size_in_atlas = Vector2i(2, 2)
+0:6/0 = 0
+3:6/size_in_atlas = Vector2i(2, 2)
+3:6/0 = 0
+6:6/size_in_atlas = Vector2i(2, 2)
+6:6/0 = 0
+9:6/size_in_atlas = Vector2i(2, 2)
+9:6/0 = 0
+12:6/size_in_atlas = Vector2i(2, 2)
+12:6/0 = 0
+15:6/size_in_atlas = Vector2i(2, 2)
+15:6/0 = 0
+0:10/size_in_atlas = Vector2i(2, 2)
+0:10/0 = 0
+0:13/size_in_atlas = Vector2i(2, 2)
+0:13/0 = 0
+0:16/size_in_atlas = Vector2i(2, 2)
+0:16/0 = 0
+3:16/size_in_atlas = Vector2i(2, 2)
+3:16/0 = 0
+3:10/size_in_atlas = Vector2i(2, 2)
+3:10/0 = 0
+3:13/size_in_atlas = Vector2i(2, 2)
+3:13/0 = 0
+6:10/size_in_atlas = Vector2i(2, 2)
+6:10/0 = 0
+6:13/size_in_atlas = Vector2i(2, 2)
+6:13/0 = 0
+9:10/size_in_atlas = Vector2i(2, 2)
+9:10/0 = 0
+9:13/size_in_atlas = Vector2i(2, 2)
+9:13/0 = 0
+6:16/size_in_atlas = Vector2i(2, 2)
+6:16/0 = 0
+9:16/size_in_atlas = Vector2i(2, 2)
+9:16/0 = 0
+12:10/size_in_atlas = Vector2i(2, 2)
+12:10/0 = 0
+15:10/size_in_atlas = Vector2i(2, 2)
+15:10/0 = 0
+18:10/size_in_atlas = Vector2i(2, 2)
+18:10/0 = 0
+18:13/size_in_atlas = Vector2i(2, 2)
+18:13/0 = 0
+21:10/size_in_atlas = Vector2i(2, 2)
+21:10/0 = 0
+21:13/size_in_atlas = Vector2i(2, 2)
+21:13/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tp0k3"]
+texture = ExtResource("6_m0ax0")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+9:0/size_in_atlas = Vector2i(1, 2)
+9:0/0 = 0
+12:0/size_in_atlas = Vector2i(1, 2)
+12:0/0 = 0
+12:3/size_in_atlas = Vector2i(1, 2)
+12:3/0 = 0
+6:3/size_in_atlas = Vector2i(2, 2)
+6:3/0 = 0
+9:3/size_in_atlas = Vector2i(1, 2)
+9:3/0 = 0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+0:6/size_in_atlas = Vector2i(2, 2)
+0:6/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0tov1"]
+texture = ExtResource("7_2bgnl")
+texture_region_size = Vector2i(32, 32)
+
+[sub_resource type="TileSet" id="TileSet_0lwcu"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_2hqd5")
+sources/1 = SubResource("TileSetAtlasSource_4vefy")
+sources/2 = SubResource("TileSetAtlasSource_prg0v")
+sources/3 = SubResource("TileSetAtlasSource_2x0my")
+sources/4 = SubResource("TileSetAtlasSource_tp0k3")
+sources/5 = SubResource("TileSetAtlasSource_0tov1")
+
+[node name="world_2" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_6lqg6")]
+position = Vector2(656, 714)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(4, 4)
+
+[node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
+tile_set = SubResource("TileSet_0lwcu")
+format = 2
+layer_0/name = "floor+walls"
+layer_0/z_index = -1
+layer_0/tile_data = PackedInt32Array(1376274, 589826, 6, 1376278, 589826, 6, 1376273, 393218, 6, 1376279, 786434, 6, 1310737, 393218, 3, 1245201, 393218, 3, 1179665, 393218, 3, 1114129, 393218, 3, 1048593, 393218, 3, 1310743, 786434, 3, 1245207, 786434, 3, 1179671, 786434, 3, 1114135, 786434, 3, 1048599, 786434, 3, 983063, 786434, 0, 983057, 393218, 0, 983058, 589826, 0, 983059, 589826, 0, 983061, 589826, 0, 983062, 589826, 0, 1048594, 589826, 3, 1048595, 589826, 3, 1048596, 589826, 3, 1048597, 589826, 3, 1048598, 589826, 3, 1114134, 589826, 3, 1114133, 589826, 3, 1114132, 589826, 3, 1114131, 589826, 3, 1114130, 589826, 3, 1179666, 589826, 3, 1179667, 589826, 3, 1179668, 589826, 3, 1179669, 589826, 3, 1179670, 589826, 3, 1245202, 589826, 3, 1245203, 589826, 3, 1245204, 589826, 3, 1245205, 589826, 3, 1245206, 589826, 3, 1310742, 589826, 3, 1310741, 589826, 3, 1310740, 589826, 3, 1310739, 589826, 3, 1310738, 589826, 3, 1376275, 589826, 3, 1376276, 589826, 3, 1376277, 589826, 3, 1441811, 196609, 0, 1441812, 393217, 0, 1441813, 589825, 0)
+layer_1/name = "y-sort"
+layer_1/y_sort_enabled = true
+layer_1/tile_data = PackedInt32Array()
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_848kn")]
