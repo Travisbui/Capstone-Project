@@ -625,6 +625,7 @@ sources/6 = SubResource("TileSetAtlasSource_lab12")
 y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("1_dd41x")]
+top_level = true
 position = Vector2(393.915, 628.05)
 scale = Vector2(0.997691, 0.997691)
 
