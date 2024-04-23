@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cv08dcff6dygx"]
+[gd_scene load_steps=18 format=3 uid="uid://cv08dcff6dygx"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_6lqg6"]
 [ext_resource type="Texture2D" uid="uid://byuw7mhtnpbx0" path="res://art/General corner pieces.png" id="2_lnbkc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://pwiretvhjxis" path="res://art/General Single path tiles.png" id="6_m0ax0"]
 [ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="7_2bgnl"]
 [ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_848kn"]
+[ext_resource type="Texture2D" uid="uid://bg0fvwd7g35ny" path="res://art/General Corners v2.png" id="8_xcmhw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2hqd5"]
 texture = ExtResource("2_lnbkc")
@@ -368,6 +369,25 @@ texture = ExtResource("6_m0ax0")
 texture = ExtResource("7_2bgnl")
 texture_region_size = Vector2i(32, 32)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqlt6"]
+texture = ExtResource("8_xcmhw")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:3/size_in_atlas = Vector2i(2, 2)
+3:3/0 = 0
+3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/size_in_atlas = Vector2i(2, 2)
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+
 [sub_resource type="TileSet" id="TileSet_0lwcu"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
@@ -377,6 +397,7 @@ sources/2 = SubResource("TileSetAtlasSource_prg0v")
 sources/3 = SubResource("TileSetAtlasSource_2x0my")
 sources/4 = SubResource("TileSetAtlasSource_tp0k3")
 sources/5 = SubResource("TileSetAtlasSource_0tov1")
+sources/6 = SubResource("TileSetAtlasSource_xqlt6")
 
 [node name="world_2" type="Node2D"]
 
