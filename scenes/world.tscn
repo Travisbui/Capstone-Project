@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=17 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://pwiretvhjxis" path="res://art/General Single path tiles.png" id="7_0h2xv"]
 [ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_ihgun"]
 [ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="8_jc3ii"]
+[ext_resource type="PackedScene" uid="uid://dgybo15tmg8ur" path="res://scenes/projectile_trap.tscn" id="9_voq3r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qugv5"]
 texture = ExtResource("2_ow6ss")
@@ -647,3 +648,6 @@ layer_1/tile_data = PackedInt32Array()
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]
+
+[node name="projectile trap" parent="." instance=ExtResource("9_voq3r")]
+position = Vector2(300, 660)
