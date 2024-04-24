@@ -20,3 +20,4 @@ func shoot():
 	arrow.dir = rotation
 	arrow.spawnPos = global_position
 	arrow.spawnRot = rotation
+	add_child(arrow)
