@@ -28,9 +28,10 @@ _data = {
 "arrow_trigger": SubResource("Animation_b2byo")
 }
 
-[node name="projectile trap" type="Node2D"]
+[node name="projectile_trap_left" type="Node2D"]
 script = ExtResource("1_yu3gl")
 arrow_interval = 1.0
+dir = 1.571
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.19209e-07, 2.38419e-07)

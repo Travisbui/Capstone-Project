@@ -4,7 +4,7 @@ extends Node2D
 @export var arrow_interval = 0.0
 @export var dir = 0.0
 
-var arrow_scene = preload("res://scenes/arrow_left.tscn")
+var arrow_scene = preload("res://scenes/arrow_right.tscn")
 
 func _ready():
 	await get_tree().create_timer(arrow_delay).timeout
