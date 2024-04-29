@@ -14,6 +14,7 @@ linear_damp = 10.0
 angular_damp = 1e+06
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_fmgo3")
 
