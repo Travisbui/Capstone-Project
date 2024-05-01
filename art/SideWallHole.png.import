@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mvsqh8i8jh61"
-path="res://.godot/imported/SpikeTrap4frame.png-002f3c72804bb234f725708486d7d871.ctex"
+uid="uid://bcfvmig4kgcai"
+path="res://.godot/imported/SideWallHole.png-27f19d66400be9c1d806edc29199b259.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/SpikeTrap4frame.png"
-dest_files=["res://.godot/imported/SpikeTrap4frame.png-002f3c72804bb234f725708486d7d871.ctex"]
+source_file="res://art/SideWallHole.png"
+dest_files=["res://.godot/imported/SideWallHole.png-27f19d66400be9c1d806edc29199b259.ctex"]
 
 [params]
 

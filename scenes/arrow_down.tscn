@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsmyaytpjdyc7"]
+
+[ext_resource type="Script" path="res://scripts/arrow_down.gd" id="1_0rtt6"]
+[ext_resource type="Texture2D" uid="uid://cvw7tk4jq0xy7" path="res://art/ArrowBackwards.png" id="2_m5qbn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmkk0"]
+size = Vector2(2, 8)
+
+[node name="arrow_down" type="Area2D"]
+script = ExtResource("1_0rtt6")
+speed = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.182, -4)
+scale = Vector2(0.035, 0.063)
+texture = ExtResource("2_m5qbn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_mmkk0")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -10)
+scale = Vector2(0.1, 0.0499999)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
