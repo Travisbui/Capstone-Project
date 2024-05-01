@@ -7,6 +7,7 @@
 size = Vector2(2, 8)
 
 [node name="arrow_up" type="Area2D"]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_s8twp")
 speed = 100.0
 

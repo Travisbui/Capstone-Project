@@ -747,7 +747,7 @@ y_sort_enabled = true
 position = Vector2(564, 1295)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(4, 4)
+zoom = Vector2(10, 10)
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true

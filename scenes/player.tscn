@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dovf1cbg4f3fa" path="res://art/side_idle_real.png" id="7_tvt1j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxwtt"]
-size = Vector2(13, 3)
+size = Vector2(13, 5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lk5ul"]
 atlas = ExtResource("2_tyoov")
@@ -406,7 +406,7 @@ motion_mode = 1
 script = ExtResource("1_qhjps")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13.5)
+position = Vector2(0, 12.5)
 shape = SubResource("RectangleShape2D_fxwtt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

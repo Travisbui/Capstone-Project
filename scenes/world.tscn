@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=22 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_ihgun"]
 [ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="8_jc3ii"]
 [ext_resource type="Script" path="res://scripts/transition_to_2.gd" id="9_xfuwg"]
+[ext_resource type="PackedScene" uid="uid://dgybo15tmg8ur" path="res://scenes/projectile_trap_left.tscn" id="10_twj7g"]
+[ext_resource type="PackedScene" uid="uid://d35csngemn6ge" path="res://scenes/pushable_object.tscn" id="11_4a821"]
+[ext_resource type="PackedScene" uid="uid://6jns6pr0428u" path="res://scenes/spike_trap.tscn" id="12_nq76y"]
+[ext_resource type="PackedScene" uid="uid://bu06bqru3d8sd" path="res://scenes/projectile_trap_down.tscn" id="13_0f6oa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qugv5"]
 texture = ExtResource("2_ow6ss")
@@ -748,12 +752,12 @@ size = Vector2(109, 83)
 y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("1_dd41x")]
-top_level = true
-position = Vector2(393.915, 628.05)
+z_index = 5
+position = Vector2(396.915, 643.05)
 scale = Vector2(0.9, 0.9)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(4, 4)
+zoom = Vector2(10, 10)
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
@@ -777,6 +781,36 @@ script = ExtResource("9_xfuwg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_to_2"]
 position = Vector2(586.5, -438.5)
 shape = SubResource("RectangleShape2D_mspeb")
+
+[node name="pushable_object" parent="." instance=ExtResource("11_4a821")]
+position = Vector2(398, 335)
+
+[node name="spike_trap" parent="." instance=ExtResource("12_nq76y")]
+y_sort_enabled = true
+position = Vector2(397, 419)
+spike_delay = 3.0
+spike_interval = 3.0
+
+[node name="spike_trap3" parent="." instance=ExtResource("12_nq76y")]
+y_sort_enabled = true
+position = Vector2(397, 478)
+spike_delay = 3.0
+spike_interval = 3.0
+
+[node name="spike_trap2" parent="." instance=ExtResource("12_nq76y")]
+y_sort_enabled = true
+position = Vector2(397, 448)
+spike_interval = 3.0
+
+[node name="projectile_trap_left2" parent="." instance=ExtResource("10_twj7g")]
+position = Vector2(460, 371)
+
+[node name="projectile_trap_down" parent="." instance=ExtResource("13_0f6oa")]
+position = Vector2(443, 282)
+arrow_interval = 0.5
+
+[node name="projectile_trap_down2" parent="." instance=ExtResource("13_0f6oa")]
+position = Vector2(397, 127)
 
 [connection signal="body_entered" from="transition_to_2" to="transition_to_2" method="_on_body_entered"]
 [connection signal="body_exited" from="transition_to_2" to="transition_to_2" method="_on_body_exited"]
