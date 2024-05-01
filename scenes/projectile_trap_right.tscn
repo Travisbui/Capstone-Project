@@ -1,10 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dds5k8kq34yc2"]
 
 [ext_resource type="Script" path="res://scripts/projectile_trap_right.gd" id="1_uuqo5"]
-[ext_resource type="Texture2D" uid="uid://ceoinhien83xu" path="res://placeholders (DELETE LATER)/DungeonTileset/goblinattck1.png" id="2_s3xcl"]
+[ext_resource type="Texture2D" uid="uid://bcfvmig4kgcai" path="res://art/SideWallHole.png" id="2_ixn75"]
 
-[sub_resource type="Animation" id="Animation_u2fsr"]
-resource_name = "arrow_trigger"
+[sub_resource type="Animation" id="Animation_4tg8g"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -19,7 +18,8 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_4tg8g"]
+[sub_resource type="Animation" id="Animation_u2fsr"]
+resource_name = "arrow_trigger"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -46,9 +46,9 @@ arrow_interval = 1.0
 dir = -1.571
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.19209e-07, 2.38419e-07)
-scale = Vector2(1.6, 1.77778)
-texture = ExtResource("2_s3xcl")
+position = Vector2(-8, 0)
+scale = Vector2(0.125, 0.133)
+texture = ExtResource("2_ixn75")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

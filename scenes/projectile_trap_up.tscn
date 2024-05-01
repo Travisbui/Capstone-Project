@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgybo15tmg8ur"]
+[gd_scene load_steps=5 format=3 uid="uid://dojrgvh6iirdl"]
 
-[ext_resource type="Script" path="res://scripts/projectile_trap.gd" id="1_yu3gl"]
-[ext_resource type="Texture2D" uid="uid://bcfvmig4kgcai" path="res://art/SideWallHole.png" id="2_hlws5"]
+[ext_resource type="Script" path="res://scripts/projectile_trap_up.gd" id="1_wormm"]
 
 [sub_resource type="Animation" id="Animation_m0yvh"]
 length = 0.001
@@ -28,16 +27,14 @@ _data = {
 "arrow_trigger": SubResource("Animation_b2byo")
 }
 
-[node name="projectile_trap_left" type="Node2D"]
-script = ExtResource("1_yu3gl")
+[node name="projectile_trap_up" type="Node2D"]
+script = ExtResource("1_wormm")
 arrow_interval = 1.0
-dir = 1.571
+dir = 3.142
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(8, 0)
-rotation = 3.14159
-scale = Vector2(0.125, 0.133)
-texture = ExtResource("2_hlws5")
+position = Vector2(-1.19209e-07, 2.38419e-07)
+scale = Vector2(1.6, 1.77778)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
