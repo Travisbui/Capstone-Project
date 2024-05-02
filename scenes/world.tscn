@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=23 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://pwiretvhjxis" path="res://art/General Single path tiles.png" id="7_0h2xv"]
 [ext_resource type="PackedScene" uid="uid://bele78klsymji" path="res://scenes/pause_menu.tscn" id="8_ihgun"]
 [ext_resource type="Texture2D" uid="uid://evawv14vqgad" path="res://art/General Door 2 Spread out.png" id="8_jc3ii"]
+[ext_resource type="PackedScene" uid="uid://b0m7t7y2qanjx" path="res://scenes/ded.tscn" id="9_4yfq0"]
 [ext_resource type="Script" path="res://scripts/transition_to_2.gd" id="9_xfuwg"]
 [ext_resource type="PackedScene" uid="uid://dgybo15tmg8ur" path="res://scenes/projectile_trap_left.tscn" id="10_twj7g"]
 [ext_resource type="PackedScene" uid="uid://d35csngemn6ge" path="res://scenes/pushable_object.tscn" id="11_4a821"]
@@ -774,6 +775,8 @@ layer_1/tile_data = PackedInt32Array(1114124, 2097158, 6, 524300, 2097158, 6, 45
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]
+
+[node name="ded" parent="CanvasLayer" instance=ExtResource("9_4yfq0")]
 
 [node name="transition_to_2" type="Area2D" parent="."]
 script = ExtResource("9_xfuwg")

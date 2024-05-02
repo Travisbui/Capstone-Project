@@ -1,0 +1,129 @@
+[gd_scene load_steps=17 format=3 uid="uid://b0m7t7y2qanjx"]
+
+[ext_resource type="Script" path="res://scripts/ded.gd" id="1_bhnwt"]
+[ext_resource type="Texture2D" uid="uid://df31kyvb825nn" path="res://art/death_no_eyes.png" id="1_ygigf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ykon"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(0, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uftqd"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(456, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwuwi"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(912, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blvwi"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(1368, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwi7o"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(1824, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcevm"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(2280, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhllf"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(2736, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yevk8"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(3192, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0kur"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(3648, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_murml"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(4104, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndmsh"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(4560, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytohj"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(5016, 0, 456, 608)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8v6rt"]
+atlas = ExtResource("1_ygigf")
+region = Rect2(5472, 0, 456, 608)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tweom"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ykon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uftqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwuwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blvwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwi7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcevm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhllf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yevk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0kur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_murml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndmsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytohj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v6rt")
+}],
+"loop": true,
+"name": &"ded",
+"speed": 5.0
+}]
+
+[node name="ded" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bhnwt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1420, 1158)
+sprite_frames = SubResource("SpriteFrames_tweom")
+animation = &"ded"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
