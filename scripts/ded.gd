@@ -1,5 +1,6 @@
 extends Control
 
-func _on_visibility_changed():
-	if visible == true:
-		get_tree().paused = true
+@onready var animated_sprite_2d = $AnimatedSprite2D
+
+func _ready():
+	animated_sprite_2d.play("ded")

@@ -74,3 +74,6 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+
+func _on_area_2d_area_entered(area):
+	get_tree().change_scene_to_file("res://scenes/ded.tscn")

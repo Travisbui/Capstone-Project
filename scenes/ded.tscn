@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b0m7t7y2qanjx"]
+[gd_scene load_steps=17 format=3 uid="uid://lmhleu0u0ac7"]
 
 [ext_resource type="Script" path="res://scripts/ded.gd" id="1_bhnwt"]
 [ext_resource type="Texture2D" uid="uid://df31kyvb825nn" path="res://art/death_no_eyes.png" id="1_ygigf"]
@@ -55,7 +55,7 @@ region = Rect2(5016, 0, 456, 608)
 atlas = ExtResource("1_ygigf")
 region = Rect2(5472, 0, 456, 608)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_tweom"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_c8w1m"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -97,13 +97,12 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8v6rt")
 }],
-"loop": true,
+"loop": false,
 "name": &"ded",
 "speed": 5.0
 }]
 
 [node name="ded" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -122,8 +121,9 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1420, 1158)
-sprite_frames = SubResource("SpriteFrames_tweom")
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_c8w1m")
 animation = &"ded"
+speed_scale = 1.5
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
