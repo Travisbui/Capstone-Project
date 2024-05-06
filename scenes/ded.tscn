@@ -121,9 +121,40 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(960, 540)
+position = Vector2(960, 656)
 sprite_frames = SubResource("SpriteFrames_c8w1m")
 animation = &"ded"
 speed_scale = 1.5
 
+[node name="GameOver" type="Label" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -957.0
+offset_top = 49.0
+offset_right = -766.0
+offset_bottom = 72.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="MainMenu" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -243.0
+offset_top = 296.0
+offset_right = -147.0
+offset_bottom = 327.0
+grow_horizontal = 2
+scale = Vector2(5, 5)
+text = "Main Menu"
+
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
