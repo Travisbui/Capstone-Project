@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byuw7mhtnpbx0"
-path="res://.godot/imported/General corner pieces.png-85ccc012290c5f8d2fefa3b78d7e34d1.ctex"
+path="res://.godot/imported/General corner pieces.png-a103ae3cf4b8882718c9e465d58e0e56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/General corner pieces.png"
-dest_files=["res://.godot/imported/General corner pieces.png-85ccc012290c5f8d2fefa3b78d7e34d1.ctex"]
+source_file="res://Art/General corner pieces.png"
+dest_files=["res://.godot/imported/General corner pieces.png-a103ae3cf4b8882718c9e465d58e0e56.ctex"]
 
 [params]
 
