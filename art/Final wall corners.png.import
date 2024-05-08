@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blgv2kf1coim1"
-path="res://.godot/imported/Final wall corners.png-3ad44c3adcb55999b6f5fa77626ef44b.ctex"
+path="res://.godot/imported/Final wall corners.png-ecc9617df0f13edc0d8b0d542cc168c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Final wall corners.png"
-dest_files=["res://.godot/imported/Final wall corners.png-3ad44c3adcb55999b6f5fa77626ef44b.ctex"]
+source_file="res://art/Final wall corners.png"
+dest_files=["res://.godot/imported/Final wall corners.png-ecc9617df0f13edc0d8b0d542cc168c1.ctex"]
 
 [params]
 
