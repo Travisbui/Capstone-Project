@@ -6,6 +6,7 @@
 size = Vector2(0.48, 0.2575)
 
 [node name="pushable_object" type="RigidBody2D"]
+y_sort_enabled = true
 mass = 50.0
 gravity_scale = 0.0
 sleeping = true
@@ -17,9 +18,9 @@ angular_damp = 1e+06
 y_sort_enabled = true
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_fmgo3")
+offset = Vector2(2.08165e-12, -3.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
-position = Vector2(0, 5)
 scale = Vector2(50, 50)
 shape = SubResource("RectangleShape2D_1krxi")

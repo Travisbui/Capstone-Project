@@ -68,15 +68,17 @@ _data = {
 }
 
 [node name="spike_trap" type="Area2D"]
+y_sort_enabled = true
 script = ExtResource("1_ibfaj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(2.08165e-12, 12)
 shape = SubResource("RectangleShape2D_iqd6n")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_hly1c")
+offset = Vector2(2.08165e-12, 10)
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
