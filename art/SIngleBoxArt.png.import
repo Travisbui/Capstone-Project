@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://celi1yttbdkvh"
-path="res://.godot/imported/SIngleBoxArt.png-c5d648cb46ab6a920920edc7e531accc.ctex"
+path="res://.godot/imported/SIngleBoxArt.png-3f7ab0d95f9e26a07ce887f05ce387a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/SIngleBoxArt.png"
-dest_files=["res://.godot/imported/SIngleBoxArt.png-c5d648cb46ab6a920920edc7e531accc.ctex"]
+source_file="res://art/SIngleBoxArt.png"
+dest_files=["res://.godot/imported/SIngleBoxArt.png-3f7ab0d95f9e26a07ce887f05ce387a2.ctex"]
 
 [params]
 

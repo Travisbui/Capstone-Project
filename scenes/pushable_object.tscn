@@ -16,11 +16,10 @@ angular_damp = 1e+06
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 y_sort_enabled = true
-scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_fmgo3")
 offset = Vector2(2.08165e-12, -3.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
-scale = Vector2(50, 50)
+scale = Vector2(30, 30)
 shape = SubResource("RectangleShape2D_1krxi")
