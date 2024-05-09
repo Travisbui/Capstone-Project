@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://celi1yttbdkvh" path="res://art/SIngleBoxArt.png" id="1_fmgo3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1krxi"]
-size = Vector2(0.48, 0.2575)
+size = Vector2(0.36, 0.2)
 
 [node name="pushable_object" type="RigidBody2D"]
 y_sort_enabled = true
@@ -16,11 +16,12 @@ angular_damp = 1e+06
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 y_sort_enabled = true
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("1_fmgo3")
 offset = Vector2(2.08165e-12, -3.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
+position = Vector2(-2.38419e-07, 1)
 scale = Vector2(50, 50)
 shape = SubResource("RectangleShape2D_1krxi")
