@@ -8,7 +8,7 @@ var spawnRot : float
 
 
 func _ready():
-	await get_tree().create_timer(0.15).timeout
+	await get_tree().create_timer(0.07).timeout
 	$CollisionShape2D.disabled = false
 
 func _physics_process(delta):
