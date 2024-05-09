@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df31kyvb825nn"
-path="res://.godot/imported/death_no_eyes.png-15abf85ebddfd6f8f41d0cac62bb31d3.ctex"
+path="res://.godot/imported/death_no_eyes.png-80d0e97512ed5d5fa89c3aebe8d40c9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/death_no_eyes.png"
-dest_files=["res://.godot/imported/death_no_eyes.png-15abf85ebddfd6f8f41d0cac62bb31d3.ctex"]
+source_file="res://Art/death_no_eyes.png"
+dest_files=["res://.godot/imported/death_no_eyes.png-80d0e97512ed5d5fa89c3aebe8d40c9a.ctex"]
 
 [params]
 
