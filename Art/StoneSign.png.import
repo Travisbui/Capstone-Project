@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://10bvjovtakng"
-path="res://.godot/imported/Last tile.png-4406e244ccc486142460ccbffb37a3bb.ctex"
+uid="uid://oanqsjku0jjr"
+path="res://.godot/imported/StoneSign.png-0860abbeef71be4a9c52cd4ea3590f16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Last tile.png"
-dest_files=["res://.godot/imported/Last tile.png-4406e244ccc486142460ccbffb37a3bb.ctex"]
+source_file="res://Art/StoneSign.png"
+dest_files=["res://.godot/imported/StoneSign.png-0860abbeef71be4a9c52cd4ea3590f16.ctex"]
 
 [params]
 
