@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg41sye01vfd"
-path="res://.godot/imported/Boxart.png-fd96756a19f64129993789e8d47e2090.ctex"
+path="res://.godot/imported/Boxart.png-e0ff0fed4bf04278310555e87cbe506a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Boxart.png"
-dest_files=["res://.godot/imported/Boxart.png-fd96756a19f64129993789e8d47e2090.ctex"]
+source_file="res://art/Boxart.png"
+dest_files=["res://.godot/imported/Boxart.png-e0ff0fed4bf04278310555e87cbe506a.ctex"]
 
 [params]
 

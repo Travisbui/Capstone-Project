@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pj2f558lnl0o"
-path="res://.godot/imported/FrontWallHole.png-dbbcbb4f8d2b5663d79cdec30b2c8709.ctex"
+path="res://.godot/imported/FrontWallHole.png-75bc59fd8296fc41ebc007491a5b6f71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/FrontWallHole.png"
-dest_files=["res://.godot/imported/FrontWallHole.png-dbbcbb4f8d2b5663d79cdec30b2c8709.ctex"]
+source_file="res://art/FrontWallHole.png"
+dest_files=["res://.godot/imported/FrontWallHole.png-75bc59fd8296fc41ebc007491a5b6f71.ctex"]
 
 [params]
 

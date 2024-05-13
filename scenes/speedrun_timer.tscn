@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c237a1n42m1om"]
+
+[ext_resource type="Script" path="res://scripts/speedrun_timer.gd" id="1_j7rg4"]
+
+[node name="speedrun_timer" type="CanvasLayer"]
+script = ExtResource("1_j7rg4")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.5
+offset_right = 25.5
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_vertical = 0
