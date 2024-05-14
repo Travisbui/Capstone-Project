@@ -406,8 +406,6 @@ y_sort_enabled = true
 motion_mode = 1
 script = ExtResource("1_qhjps")
 
-[node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
-
 [node name="hitbox" type="Area2D" parent="."]
 position = Vector2(0, -13)
 
@@ -424,6 +422,8 @@ position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_wigtt")
 animation = &"back_idle"
 offset = Vector2(2.08165e-12, -13)
+
+[node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
