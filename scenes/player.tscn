@@ -426,4 +426,3 @@ offset = Vector2(2.08165e-12, -13)
 [node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
