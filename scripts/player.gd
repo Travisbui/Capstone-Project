@@ -76,4 +76,5 @@ func play_anim(movement):
 			anim.play("back_idle")
 
 func _on_area_2d_area_entered(area):
+	Global.speedrun_time = 0.0
 	get_tree().change_scene_to_file("res://scenes/ded.tscn")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=61 format=3 uid="uid://cw1xpgcgaajg5"]
+[gd_scene load_steps=62 format=3 uid="uid://cw1xpgcgaajg5"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_qhjps"]
+[ext_resource type="PackedScene" uid="uid://c237a1n42m1om" path="res://scenes/speedrun_timer.tscn" id="2_0wqrg"]
 [ext_resource type="Texture2D" uid="uid://bwriyaagbubnk" path="res://art/facing up idle-0001-sheet.png" id="2_tyoov"]
 [ext_resource type="Texture2D" uid="uid://c0mxlnslcundl" path="res://art/walking up(forward)-Sheet-Sheet-Sheet.png" id="3_3v6di"]
 [ext_resource type="Texture2D" uid="uid://df31kyvb825nn" path="res://art/death_no_eyes.png" id="4_2k1nj"]
@@ -421,6 +422,8 @@ position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_wigtt")
 animation = &"back_idle"
 offset = Vector2(2.08165e-12, -13)
+
+[node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
