@@ -9,6 +9,7 @@ size = Vector2(2, 2)
 [node name="arrow_up" type="Area2D"]
 y_sort_enabled = true
 scale = Vector2(1.5, 1.5)
+collision_layer = 2
 script = ExtResource("1_s8twp")
 speed = 100.0
 

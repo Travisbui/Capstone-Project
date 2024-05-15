@@ -75,7 +75,9 @@ func play_anim(movement):
 		elif movement == 0:
 			anim.play("back_idle")
 
-func _on_area_2d_area_entered(CollisionShape2D):
-	if CollisionShape2D is RectangleShape2D:
-		Global.speedrun_time = 0.0
-		get_tree().change_scene_to_file("res://scenes/ded.tscn")
+func _on_hitbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	Global.speedrun_time = 0.0
+	get_tree().change_scene_to_file("res://scenes/ded.tscn")
+
+func _on_interactbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	pass # Replace with function body.

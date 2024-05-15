@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://cw1xpgcgaajg5"]
+[gd_scene load_steps=63 format=3 uid="uid://cw1xpgcgaajg5"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_qhjps"]
 [ext_resource type="PackedScene" uid="uid://c237a1n42m1om" path="res://scenes/speedrun_timer.tscn" id="2_0wqrg"]
@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://dovf1cbg4f3fa" path="res://art/side_idle_real.png" id="7_tvt1j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxwtt"]
+size = Vector2(13, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4vwm"]
 size = Vector2(13, 5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lk5ul"]
@@ -408,10 +411,17 @@ script = ExtResource("1_qhjps")
 
 [node name="hitbox" type="Area2D" parent="."]
 position = Vector2(0, -13)
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 position = Vector2(0, 12.5)
 shape = SubResource("RectangleShape2D_fxwtt")
+
+[node name="interactbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactbox"]
+position = Vector2(2.08165e-12, -0.5)
+shape = SubResource("RectangleShape2D_j4vwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
@@ -426,3 +436,5 @@ offset = Vector2(2.08165e-12, -13)
 [node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_shape_entered" from="hitbox" to="." method="_on_hitbox_area_shape_entered"]
+[connection signal="area_shape_entered" from="interactbox" to="." method="_on_interactbox_area_shape_entered"]
