@@ -3,6 +3,7 @@ extends CharacterBody2D
 const speed = 35
 var current_dir = "none"
 var push_force = 500.0
+@onready var label = $Label
 
 func _ready():
 	$AnimatedSprite2D.play("back_idle")
@@ -80,4 +81,9 @@ func _on_hitbox_area_shape_entered(area_rid, area, area_shape_index, local_shape
 	get_tree().change_scene_to_file("res://scenes/ded.tscn")
 
 func _on_interactbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	pass # Replace with function body.
+	label.visible = true
+	set_process_input(true)
+
+func _on_interactbox_area_shape_exited(area_rid, area, area_shape_index, local_shape_index):
+	label.visible = false
+	set_process_input(false)

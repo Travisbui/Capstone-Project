@@ -776,6 +776,7 @@ layer_1/tile_data = PackedInt32Array(1114124, 2097158, 6, 524300, 2097158, 6, 45
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]
 
 [node name="transition_to_2" type="Area2D" parent="."]
+collision_layer = 4
 script = ExtResource("9_xfuwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_to_2"]
@@ -811,7 +812,7 @@ arrow_interval = 0.5
 position = Vector2(397, 127)
 
 [node name="Sign" parent="." instance=ExtResource("14_7vyle")]
-position = Vector2(356, 555)
+position = Vector2(356, 558)
 
 [connection signal="body_entered" from="transition_to_2" to="transition_to_2" method="_on_body_entered"]
 [connection signal="body_exited" from="transition_to_2" to="transition_to_2" method="_on_body_exited"]
