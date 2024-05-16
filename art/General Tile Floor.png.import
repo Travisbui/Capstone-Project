@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c34qpa8aoqcgg"
-path="res://.godot/imported/General Tile Floor.png-4d5edec1b84ce099f942cb8738351a56.ctex"
+path="res://.godot/imported/General Tile Floor.png-ca24a1bbf8432a01aea6c4af7898c211.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/General Tile Floor.png"
-dest_files=["res://.godot/imported/General Tile Floor.png-4d5edec1b84ce099f942cb8738351a56.ctex"]
+source_file="res://Art/General Tile Floor.png"
+dest_files=["res://.godot/imported/General Tile Floor.png-ca24a1bbf8432a01aea6c4af7898c211.ctex"]
 
 [params]
 
