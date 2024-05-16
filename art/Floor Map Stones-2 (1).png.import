@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2xdh26voeewo"
-path="res://.godot/imported/Floor Map Stones-2 (1).png-853295db4cc9233b03d9b552da1e5a6b.ctex"
+path="res://.godot/imported/Floor Map Stones-2 (1).png-ffe5431135aa0335d8b5ff8fc5c31664.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Floor Map Stones-2 (1).png"
-dest_files=["res://.godot/imported/Floor Map Stones-2 (1).png-853295db4cc9233b03d9b552da1e5a6b.ctex"]
+source_file="res://Art/Floor Map Stones-2 (1).png"
+dest_files=["res://.godot/imported/Floor Map Stones-2 (1).png-ffe5431135aa0335d8b5ff8fc5c31664.ctex"]
 
 [params]
 
