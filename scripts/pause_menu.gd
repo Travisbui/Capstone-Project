@@ -1,15 +1,21 @@
 extends Control
 
 func _ready():
+	self.release_focus()
+	hide()
 	$AnimationPlayer.play("RESET")
-	$PanelContainer/VBoxContainer/resume.grab_focus()
 
 func resume():
 	get_tree().paused = false
+	self.release_focus()
 	$AnimationPlayer.play_backwards("blur")
+	await $AnimationPlayer.animation_finished
+	hide()
 
 func pause():
 	get_tree().paused = true
+	$PanelContainer/VBoxContainer/resume.grab_focus()
+	show()
 	$AnimationPlayer.play("blur")
 
 func testEsc():
