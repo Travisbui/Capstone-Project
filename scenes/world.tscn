@@ -753,7 +753,7 @@ size = Vector2(109, 83)
 y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("1_dd41x")]
-position = Vector2(396.915, 643.05)
+position = Vector2(400, 647)
 scale = Vector2(0.9, 0.9)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -761,7 +761,6 @@ zoom = Vector2(10, 10)
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
-scale = Vector2(0.991018, 1)
 tile_set = SubResource("TileSet_81s48")
 format = 2
 layer_0/name = "floor+wall"
@@ -776,7 +775,7 @@ layer_1/tile_data = PackedInt32Array(1114124, 2097158, 6, 524300, 2097158, 6, 45
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]
 
 [node name="transition_to_2" type="Area2D" parent="."]
-collision_layer = 4
+collision_layer = 8
 script = ExtResource("9_xfuwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_to_2"]
@@ -784,25 +783,25 @@ position = Vector2(586.5, -438.5)
 shape = SubResource("RectangleShape2D_mspeb")
 
 [node name="pushable_object" parent="." instance=ExtResource("11_4a821")]
-position = Vector2(398, 335)
+position = Vector2(400, 335)
 
 [node name="spike_trap" parent="." instance=ExtResource("12_nq76y")]
 y_sort_enabled = false
-position = Vector2(397, 419)
+position = Vector2(400, 419)
 spike_delay = 3.0
 spike_interval = 3.0
 
 [node name="spike_trap3" parent="." instance=ExtResource("12_nq76y")]
-position = Vector2(397, 478)
+position = Vector2(400, 478)
 spike_delay = 3.0
 spike_interval = 3.0
 
 [node name="spike_trap2" parent="." instance=ExtResource("12_nq76y")]
-position = Vector2(397, 448)
+position = Vector2(400, 448)
 spike_interval = 3.0
 
 [node name="projectile_trap_left2" parent="." instance=ExtResource("10_twj7g")]
-position = Vector2(460, 371)
+position = Vector2(466, 371)
 
 [node name="projectile_trap_down" parent="." instance=ExtResource("13_0f6oa")]
 position = Vector2(443, 282)
@@ -813,6 +812,205 @@ position = Vector2(397, 127)
 
 [node name="Sign" parent="." instance=ExtResource("14_7vyle")]
 position = Vector2(356, 558)
+
+[node name="Big Room" type="Node2D" parent="."]
+
+[node name="hall_projectile" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(720, -34)
+arrow_interval = 6.0
+
+[node name="hall_projectile2" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(711, -34)
+arrow_interval = 6.0
+
+[node name="hall_projectile3" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(729, -34)
+arrow_interval = 6.0
+
+[node name="projectile_trap_down" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(693, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down2" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(702, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down3" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(675, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down4" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(684, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down5" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(657, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down6" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(666, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down7" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(639, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down8" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(648, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down9" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(621, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down10" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(630, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down11" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(810, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down12" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(819, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down13" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(792, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down14" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(801, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down15" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(774, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down16" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(783, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down17" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(756, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down18" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(765, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down19" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(738, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_down20" parent="Big Room" instance=ExtResource("13_0f6oa")]
+position = Vector2(747, 254)
+arrow_delay = 8.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 336)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left2" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 345)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left3" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 327)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left4" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 363)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left5" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 372)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left6" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 354)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left7" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 390)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left8" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 399)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left9" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 381)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left10" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 309)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left11" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 318)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left13" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 291)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left14" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 300)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left15" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 273)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left16" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 282)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left18" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 264)
+arrow_delay = 12.995
+arrow_interval = 6.0
+
+[node name="projectile_trap_left12" parent="Big Room" instance=ExtResource("10_twj7g")]
+position = Vector2(818, 408)
+arrow_delay = 12.995
+arrow_interval = 6.0
 
 [connection signal="body_entered" from="transition_to_2" to="transition_to_2" method="_on_body_entered"]
 [connection signal="body_exited" from="transition_to_2" to="transition_to_2" method="_on_body_exited"]

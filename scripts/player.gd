@@ -9,7 +9,6 @@ var push_force = 500.0
 func _ready():
 	$AnimatedSprite2D.play("back_idle")
 
-
 func _physics_process(delta):
 	player_movement(delta)
 	move_and_slide()
@@ -80,6 +79,10 @@ func play_anim(movement):
 			anim.play("back_walk")
 		elif movement == 0:
 			anim.play("back_idle")
+
+func _on_transitionbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	Global.speedrun_time = 0.0
+	get_tree().change_scene_to_file("res://scenes/win.tscn")
 
 func _on_hitbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	Global.speedrun_time = 0.0
