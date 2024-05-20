@@ -4,14 +4,19 @@ const speed = 35
 var current_dir = "none"
 var push_force = 500.0
 @onready var label = $Label
+@onready var textbox = $textbox/textbox_container
 
 func _ready():
 	$AnimatedSprite2D.play("back_idle")
 
+
 func _physics_process(delta):
 	player_movement(delta)
 	move_and_slide()
-	
+	interact()
+	if label.visible == false:
+		textbox.visible = false
+		
 	for i in get_slide_collision_count():
 		var c = get_slide_collision(i)
 		if c.get_collider() is RigidBody2D:
@@ -82,8 +87,10 @@ func _on_hitbox_area_shape_entered(area_rid, area, area_shape_index, local_shape
 
 func _on_interactbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	label.visible = true
-	set_process_input(true)
 
 func _on_interactbox_area_shape_exited(area_rid, area, area_shape_index, local_shape_index):
 	label.visible = false
-	set_process_input(false)
+
+func interact():
+	if label.visible == true and Input.is_action_pressed("interact"):
+		textbox.visible = true
