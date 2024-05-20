@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=23 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://d35csngemn6ge" path="res://scenes/pushable_object.tscn" id="11_4a821"]
 [ext_resource type="PackedScene" uid="uid://6jns6pr0428u" path="res://scenes/spike_trap.tscn" id="12_nq76y"]
 [ext_resource type="PackedScene" uid="uid://bu06bqru3d8sd" path="res://scenes/projectile_trap_down.tscn" id="13_0f6oa"]
+[ext_resource type="PackedScene" uid="uid://ddlo1or1rdtmq" path="res://scenes/sign.tscn" id="14_7vyle"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qugv5"]
 texture = ExtResource("2_ow6ss")
@@ -775,6 +776,7 @@ layer_1/tile_data = PackedInt32Array(1114124, 2097158, 6, 524300, 2097158, 6, 45
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("8_ihgun")]
 
 [node name="transition_to_2" type="Area2D" parent="."]
+collision_layer = 4
 script = ExtResource("9_xfuwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_to_2"]
@@ -808,6 +810,9 @@ arrow_interval = 0.5
 
 [node name="projectile_trap_down2" parent="." instance=ExtResource("13_0f6oa")]
 position = Vector2(397, 127)
+
+[node name="Sign" parent="." instance=ExtResource("14_7vyle")]
+position = Vector2(356, 558)
 
 [connection signal="body_entered" from="transition_to_2" to="transition_to_2" method="_on_body_entered"]
 [connection signal="body_exited" from="transition_to_2" to="transition_to_2" method="_on_body_exited"]

@@ -3,14 +3,20 @@ extends CharacterBody2D
 const speed = 35
 var current_dir = "none"
 var push_force = 500.0
+@onready var label = $Label
+@onready var textbox = $textbox/textbox_container
 
 func _ready():
 	$AnimatedSprite2D.play("back_idle")
 
+
 func _physics_process(delta):
 	player_movement(delta)
 	move_and_slide()
-	
+	interact()
+	if label.visible == false:
+		textbox.visible = false
+		
 	for i in get_slide_collision_count():
 		var c = get_slide_collision(i)
 		if c.get_collider() is RigidBody2D:
@@ -75,6 +81,16 @@ func play_anim(movement):
 		elif movement == 0:
 			anim.play("back_idle")
 
-func _on_area_2d_area_entered(area):
+func _on_hitbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	Global.speedrun_time = 0.0
 	get_tree().change_scene_to_file("res://scenes/ded.tscn")
+
+func _on_interactbox_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	label.visible = true
+
+func _on_interactbox_area_shape_exited(area_rid, area, area_shape_index, local_shape_index):
+	label.visible = false
+
+func interact():
+	if label.visible == true and Input.is_action_pressed("interact"):
+		textbox.visible = true

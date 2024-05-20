@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://cw1xpgcgaajg5"]
+[gd_scene load_steps=64 format=3 uid="uid://cw1xpgcgaajg5"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_qhjps"]
 [ext_resource type="PackedScene" uid="uid://c237a1n42m1om" path="res://scenes/speedrun_timer.tscn" id="2_0wqrg"]
@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://dovf1cbg4f3fa" path="res://art/side_idle_real.png" id="7_tvt1j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxwtt"]
+size = Vector2(13, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4vwm"]
 size = Vector2(13, 5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lk5ul"]
@@ -401,6 +404,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8pix"]
+bg_color = Color(0.329412, 0.431373, 0.478431, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.12549, 0.129412, 0.133333, 1)
+
 [node name="player" type="CharacterBody2D"]
 y_sort_enabled = true
 motion_mode = 1
@@ -408,10 +419,18 @@ script = ExtResource("1_qhjps")
 
 [node name="hitbox" type="Area2D" parent="."]
 position = Vector2(0, -13)
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 position = Vector2(0, 12.5)
 shape = SubResource("RectangleShape2D_fxwtt")
+
+[node name="interactbox" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactbox"]
+position = Vector2(2.08165e-12, -0.5)
+shape = SubResource("RectangleShape2D_j4vwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
@@ -425,5 +444,68 @@ offset = Vector2(2.08165e-12, -13)
 
 [node name="speedrun_timer" parent="." instance=ExtResource("2_0wqrg")]
 
+[node name="Label" type="Label" parent="."]
+visible = false
+z_index = 1
+y_sort_enabled = true
+offset_left = -20.0
+offset_top = -80.0
+offset_right = 20.0
+offset_bottom = -57.0
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(20, 80)
+text = "E"
+horizontal_alignment = 1
+
+[node name="textbox" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="textbox_container" type="MarginContainer" parent="textbox"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -274.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Panel" type="Panel" parent="textbox/textbox_container"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k8pix")
+
+[node name="MarginContainer" type="MarginContainer" parent="textbox/textbox_container"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Panel" type="Panel" parent="textbox/textbox_container/MarginContainer"]
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="textbox/textbox_container/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="textbox/textbox_container/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(1728, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.12549, 0.129412, 0.133333, 1)
+theme_override_font_sizes/font_size = 58
+text = "HELLO... HEHEHE"
+autowrap_mode = 1
+clip_text = true
+
 [connection signal="area_entered" from="hitbox" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
+[connection signal="area_shape_entered" from="hitbox" to="." method="_on_hitbox_area_shape_entered"]
+[connection signal="area_shape_entered" from="interactbox" to="." method="_on_interactbox_area_shape_entered"]
+[connection signal="area_shape_exited" from="interactbox" to="." method="_on_interactbox_area_shape_exited"]
