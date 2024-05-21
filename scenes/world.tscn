@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://beov1wt8wnlr5"]
+[gd_scene load_steps=25 format=3 uid="uid://beov1wt8wnlr5"]
 
 [ext_resource type="PackedScene" uid="uid://cw1xpgcgaajg5" path="res://scenes/player.tscn" id="1_dd41x"]
 [ext_resource type="Texture2D" uid="uid://dqbdkotgjswwc" path="res://art/General Stairs.png" id="2_8ddkc"]
@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://6jns6pr0428u" path="res://scenes/spike_trap.tscn" id="12_nq76y"]
 [ext_resource type="PackedScene" uid="uid://bu06bqru3d8sd" path="res://scenes/projectile_trap_down.tscn" id="13_0f6oa"]
 [ext_resource type="PackedScene" uid="uid://ddlo1or1rdtmq" path="res://scenes/sign.tscn" id="14_7vyle"]
+[ext_resource type="PackedScene" uid="uid://dojrgvh6iirdl" path="res://scenes/projectile_trap_up.tscn" id="15_xkcgc"]
+[ext_resource type="PackedScene" uid="uid://dds5k8kq34yc2" path="res://scenes/projectile_trap_right.tscn" id="16_d30cr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qugv5"]
 texture = ExtResource("2_ow6ss")
@@ -753,10 +755,11 @@ size = Vector2(109, 83)
 y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("1_dd41x")]
-position = Vector2(400, 647)
+position = Vector2(400, 657)
 scale = Vector2(0.9, 0.9)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+offset = Vector2(0, -10)
 zoom = Vector2(10, 10)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -779,11 +782,11 @@ collision_layer = 8
 script = ExtResource("9_xfuwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="transition_to_2"]
-position = Vector2(586.5, -438.5)
+position = Vector2(592, -438)
 shape = SubResource("RectangleShape2D_mspeb")
 
 [node name="pushable_object" parent="." instance=ExtResource("11_4a821")]
-position = Vector2(400, 335)
+position = Vector2(400, 340)
 
 [node name="spike_trap" parent="." instance=ExtResource("12_nq76y")]
 y_sort_enabled = false
@@ -792,7 +795,7 @@ spike_delay = 3.0
 spike_interval = 3.0
 
 [node name="spike_trap3" parent="." instance=ExtResource("12_nq76y")]
-position = Vector2(400, 478)
+position = Vector2(400, 477)
 spike_delay = 3.0
 spike_interval = 3.0
 
@@ -804,14 +807,11 @@ spike_interval = 3.0
 position = Vector2(466, 371)
 
 [node name="projectile_trap_down" parent="." instance=ExtResource("13_0f6oa")]
-position = Vector2(443, 282)
+position = Vector2(448, 284)
 arrow_interval = 0.5
 
 [node name="projectile_trap_down2" parent="." instance=ExtResource("13_0f6oa")]
-position = Vector2(397, 127)
-
-[node name="Sign" parent="." instance=ExtResource("14_7vyle")]
-position = Vector2(356, 558)
+position = Vector2(400, 127)
 
 [node name="Big Room" type="Node2D" parent="."]
 
@@ -1011,6 +1011,107 @@ arrow_interval = 6.0
 position = Vector2(818, 408)
 arrow_delay = 12.995
 arrow_interval = 6.0
+
+[node name="Sign" parent="." instance=ExtResource("14_7vyle")]
+position = Vector2(444, 558)
+
+[node name="projectile_trap_left" parent="." instance=ExtResource("10_twj7g")]
+position = Vector2(1010, 108)
+
+[node name="projectile_trap_left3" parent="." instance=ExtResource("10_twj7g")]
+position = Vector2(1010, 116)
+
+[node name="spike_trap4" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(721, 103)
+spike_interval = 1.0
+
+[node name="projectile_trap_down3" parent="." instance=ExtResource("13_0f6oa")]
+position = Vector2(192, 96)
+arrow_interval = 2.0
+
+[node name="projectile_trap_down4" parent="." instance=ExtResource("13_0f6oa")]
+position = Vector2(160, 96)
+arrow_interval = 2.0
+
+[node name="projectile_trap_down5" parent="." instance=ExtResource("13_0f6oa")]
+position = Vector2(128, 96)
+arrow_interval = 2.0
+
+[node name="projectile_trap_up" parent="." instance=ExtResource("15_xkcgc")]
+position = Vector2(176, 184)
+arrow_delay = 1.0
+arrow_interval = 2.0
+
+[node name="projectile_trap_up2" parent="." instance=ExtResource("15_xkcgc")]
+position = Vector2(144, 184)
+arrow_delay = 1.0
+arrow_interval = 2.0
+
+[node name="projectile_trap_up3" parent="." instance=ExtResource("15_xkcgc")]
+position = Vector2(112, 184)
+arrow_delay = 1.0
+arrow_interval = 2.0
+
+[node name="projectile_trap_right" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(78, 136)
+arrow_interval = 3.0
+
+[node name="projectile_trap_right2" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(78, 143)
+arrow_interval = 3.0
+
+[node name="projectile_trap_right3" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(78, 150)
+arrow_interval = 3.0
+
+[node name="Sign2" parent="." instance=ExtResource("14_7vyle")]
+position = Vector2(93, 78)
+
+[node name="spike_trap6" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(240, 134)
+spike_interval = 3.0
+
+[node name="pushable_object2" parent="." instance=ExtResource("11_4a821")]
+position = Vector2(240, 148)
+
+[node name="Sign3" parent="." instance=ExtResource("14_7vyle")]
+position = Vector2(543, -83)
+
+[node name="spike_trap7" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(592, -244)
+spike_interval = 1.5
+
+[node name="spike_trap8" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(592, -93)
+spike_interval = 2.0
+
+[node name="projectile_trap_right4" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(526, -16)
+arrow_interval = 1.5
+
+[node name="projectile_trap_left4" parent="." instance=ExtResource("10_twj7g")]
+position = Vector2(658, -337)
+
+[node name="projectile_trap_right5" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(526, -321)
+
+[node name="projectile_trap_left5" parent="." instance=ExtResource("10_twj7g")]
+position = Vector2(658, -289)
+
+[node name="projectile_trap_right6" parent="." instance=ExtResource("16_d30cr")]
+position = Vector2(526, -273)
+
+[node name="spike_trap5" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(896, 102)
+
+[node name="spike_trap11" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(992, 102)
+
+[node name="spike_trap9" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(944, 77)
+
+[node name="spike_trap10" parent="." instance=ExtResource("12_nq76y")]
+position = Vector2(944, 127)
 
 [connection signal="body_entered" from="transition_to_2" to="transition_to_2" method="_on_body_entered"]
 [connection signal="body_exited" from="transition_to_2" to="transition_to_2" method="_on_body_exited"]
